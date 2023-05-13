@@ -17,6 +17,8 @@ tlačítko twitter          #1da1f2
 
 body {
   background-color: #bdc3c7;
+  margin: 0;
+  font-size: 16px;
 }
 
 h1 {
@@ -28,7 +30,6 @@ h1 {
 
 p {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 14px;
   color: #c4d0da;
 }
 
@@ -38,10 +39,9 @@ h1 {
 }
 
 .profil { 
-  margin-top: 50px;
-  margin-right: 80%;
-  margin-left: 3%;
-  position: static;
+  margin: 50px; 
+  width: 300px;
+  height: 100%;
   background-color: #31363b;
   box-shadow: 1px 4px 6px 1px rgba(107, 107, 115, 0.2);
   text-decoration: none;
@@ -77,8 +77,10 @@ ul.odkazy {
 }
 
 li.portfolio {
-  padding: 0;
-  margin: 0;
+  margin-top: 30px;
+  padding: 25px;
+  width: 100%;
+  border-top: 1.5px groove #8f9ca8;
   
 }
 
@@ -91,24 +93,25 @@ a {
 li.facebook,
 li.twitter {
   display: inline-block;
-  padding-bottom: 15px;
   border-top: 1.5px groove #8f9ca8;
+  padding: 25px;
+  width: 50%;
 }
 
 li.facebook {
-  margin-right: 10px;
   display: inline-block;
+  border-right: 1.5px groove #8f9ca8;
 }
 
 
-li.portfolio a:hover {
+li.portfolio:hover {
   background-color: #e74c3c;
 }
 
-li.facebook a:hover {
+li.facebook:hover {
   background-color: #3b5998;
 }
 
-li.twitter a:hover {
+li.twitter:hover {
   background-color: #1da1f2;
 }
